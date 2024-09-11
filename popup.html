@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TiTra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <label>Punch-in: </label><span id="punchInTime">Loading...</span>
+        </div>
+        <div>
+            <label>Break: </label>
+            <div class="break-time-container">
+                <input type="text" id="breakTime" placeholder="e.g. 25m or 1h 30m">
+                <!-- Replace button with an image as a clickable button -->
+                <img id="refreshBtn" src="refresh.png" alt="Refresh" class="refresh-icon">
+            </div>
+        </div>
+        <div>
+            <label>Expected End Time: </label><span id="endTime">Calculating...</span>
+        </div>
+        <div>
+            <label>Min Hours: </label><span id="minHours">Calculating...</span>
+        </div>        
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
